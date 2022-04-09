@@ -3,6 +3,7 @@ env:
   node: true
 extends:
   - airbnb-base
+  ["plugin:import/recommended"],
 parserOptions:
   ecmaVersion: latest
   sourceType: module
