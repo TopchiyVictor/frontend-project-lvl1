@@ -1,7 +1,8 @@
-name: make-lint
+name: make lint
 
 on:
   - push
+  - pull_request
 
 env:
   CI: true
@@ -21,6 +22,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-      # - run: make install
+      - run: make install
       - run: make lint
-      # - run: make test
+      - run: make test
