@@ -14,7 +14,8 @@
   "author": "{ 'name' : 'Topchiy Victor', 'email' : 'krasilnikof@yandex.ru' }",
   "license": "ISC",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "bugs": {
     "url": "https://github.com/TopchiyVictor/frontend-project-lvl1/issues"
