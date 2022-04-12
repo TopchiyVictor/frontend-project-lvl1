@@ -1,21 +1,20 @@
 /* eslint-disable comma-dangle */
 import readlineSync from 'readline-sync';
-import getRandomNumber from './brain-even-random-number.js';
 
 const howManyQuestions = 3;
 
-const brainEven = () => {
+const commonLogics = () => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  let task;
+  console.log(task);
   for (let i = 1; i <= howManyQuestions; i += 1) {
-    const number = getRandomNumber(1, 100);
-    console.log(`Question: ${number}`);
+    let condition;
+    console.log(`Question: ${condition}`);
     const answer = readlineSync.question('Your answer: ');
-    const isEven = number % 2 === 0;
-    const correctAnswer = isEven ? 'yes' : 'no';
-    if ((answer === 'yes' && isEven) || (answer === 'no' && !isEven)) {
+    let correctAnswer;
+    if (answer === correctAnswer) {
       console.log('Correct!');
     } else {
       console.log(
@@ -26,4 +25,4 @@ const brainEven = () => {
   }
   console.log(`Congratulations, ${userName}`);
 };
-export default brainEven;
+export default commonLogics;
