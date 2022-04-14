@@ -6,3 +6,5 @@
 ![example workflow](https://github.com/TopchiyVictor/frontend-project-lvl1/actions/workflows/make-lint.yml/badge.svg)
 
 [![asciicast](https://asciinema.org/a/486596.svg)](https://asciinema.org/a/486596)
+
+[![asciicast](https://asciinema.org/a/487631.svg)](https://asciinema.org/a/487631)
