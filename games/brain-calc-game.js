@@ -4,7 +4,9 @@ import getRandomNumber from '../src/random-number.js';
 
 const task = 'What is the result of the expression?';
 
+// eslint-disable-next-line consistent-return
 const answer = (firstNum, operator, secondNum) => {
+  // eslint-disable-next-line default-case
   switch (operator) {
     case '+':
       return firstNum + secondNum;
