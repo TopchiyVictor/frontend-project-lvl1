@@ -10,13 +10,13 @@ const decision = () => {
   let nextStepProgression = startNumProgression + increaseProgression;
   const progression = [`${startNumProgression}`];
   for (let i = 1; i <= 9; i += 1) {
-    progression.push(` ${nextStepProgression}`);
+    progression.push(`${nextStepProgression}`);
     nextStepProgression += increaseProgression;
   }
   const indexHiddenNum = getRandomNumber(0, 9);
   const correctAnswer = progression[indexHiddenNum].trim();
-  progression[indexHiddenNum] = ' ..';
-  const condition = progression.join('');
+  progression[indexHiddenNum] = '..';
+  const condition = progression.join(' ');
   return [condition, correctAnswer];
 };
 
