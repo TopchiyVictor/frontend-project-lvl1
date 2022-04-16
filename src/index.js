@@ -21,6 +21,6 @@ const commonLogics = (task, decision) => {
       return;
     }
   }
-  console.log(`Congratulations, ${userName}`);
+  console.log(`Congratulations, ${userName}!`);
 };
 export default commonLogics;
