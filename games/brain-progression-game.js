@@ -15,8 +15,8 @@ const decision = () => {
   }
   const indexHiddenNum = getRandomNumber(0, 9);
   const correctAnswer = progression[indexHiddenNum].trim();
-  progression[indexHiddenNum] = '..';
-  const condition = progression.join(' ');
+  progression[indexHiddenNum] = ' ..';
+  const condition = progression.join('');
   return [condition, correctAnswer];
 };
 
