@@ -1,20 +1,24 @@
-import commonLogics from '../src/index.js';
+import commonLogics from '../index.js';
 
-import getRandomNumber from '../src/random-number.js';
+import getRandomNumber from '../random-number.js';
 
 const task = 'What is the result of the expression?';
 
-// eslint-disable-next-line consistent-return
 const answer = (firstNum, operator, secondNum) => {
-  // eslint-disable-next-line default-case
+  let result;
   switch (operator) {
     case '+':
-      return firstNum + secondNum;
+      result = firstNum + secondNum;
+      break;
     case '-':
-      return firstNum - secondNum;
+      result = firstNum - secondNum;
+      break;
     case '*':
-      return firstNum * secondNum;
+      result = firstNum * secondNum;
+      break;
+    default:
   }
+  return result;
 };
 
 const decision = () => {

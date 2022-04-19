@@ -1,6 +1,6 @@
-import commonLogics from '../src/index.js';
+import commonLogics from '../index.js';
 
-import getRandomNumber from '../src/random-number.js';
+import getRandomNumber from '../random-number.js';
 
 const task = 'Answer "yes" if the number is even, otherwise answer "no".';
 
