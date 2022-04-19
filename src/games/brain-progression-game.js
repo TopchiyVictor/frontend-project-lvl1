@@ -8,12 +8,13 @@ const decision = () => {
   const increaseProgression = getRandomNumber(1, 5);
   const startNumProgression = getRandomNumber(1, 100);
   let nextStepProgression = startNumProgression;
+  const numOfDigitInProgression = getRandomNumber(5, 10);
   const progression = [];
-  for (let i = 1; i <= getRandomNumber(5, 10); i += 1) {
+  for (let i = 1; i <= numOfDigitInProgression; i += 1) {
     progression.push(`${nextStepProgression}`);
     nextStepProgression += increaseProgression;
   }
-  const indexHiddenNum = getRandomNumber(0, 9);
+  const indexHiddenNum = getRandomNumber(0, numOfDigitInProgression - 1);
   const correctAnswer = progression[indexHiddenNum];
   progression[indexHiddenNum] = '..';
   const condition = progression.join(' ');
