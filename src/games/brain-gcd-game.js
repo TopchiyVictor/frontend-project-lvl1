@@ -15,11 +15,11 @@ const getGcd = (firstNum, secondNum) => {
   return largestDivider;
 };
 
-const decision = () => {
+const getRoundData = () => {
   const firstNum = getRandomNumber(1, 10);
   const secondNum = getRandomNumber(1, 10);
   const condition = `${firstNum} ${secondNum}`;
   const correctAnswer = getGcd(firstNum, secondNum).toString();
   return [condition, correctAnswer];
 };
-export default () => commonLogics(task, decision);
+export default () => commonLogics(task, getRoundData);
