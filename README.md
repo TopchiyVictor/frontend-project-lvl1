@@ -7,6 +7,15 @@ Hexlet backend-project-lvl1: console games
 
 ![example workflow](https://github.com/TopchiyVictor/frontend-project-lvl1/actions/workflows/make-lint.yml/badge.svg)
 
+Installation:
+
+1. Install globally Node.js version not lower than 16.8.0
+2. Copy this repository locally to a convenient location on your computer
+3. Install the dependencies using the < install > command in the terminal
+4. Install games using the < npm link > command in the terminal
+5. Run the game of interest in the terminal by typing the command: < game name >
+
+
 To start a game, please type one of these commands in the console:
 
 brain-games
@@ -39,10 +48,3 @@ brain-progression
 brain-prime
 [![asciicast](https://asciinema.org/a/487916.svg)](https://asciinema.org/a/487916)
 
-Installation:
-
-1. Install globally Node.js version not lower than 16.8.0
-2. Copy this repository locally to a convenient location on your computer
-3. Install the dependencies using the < install > command in the terminal
-4. Install games using the < npm link > command in the terminal
-5. Run the game of interest in the terminal by typing the command: < game name >
