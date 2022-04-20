@@ -17,9 +17,9 @@ const isPrime = (num) => {
   return true;
 };
 
-const decision = () => {
+const getRoundData = () => {
   const condition = getRandomNumber(1, 100);
   const correctAnswer = isPrime(condition) ? 'yes' : 'no';
   return [condition, correctAnswer];
 };
-export default () => commonLogics(task, decision);
+export default () => commonLogics(task, getRoundData);
