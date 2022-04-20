@@ -14,9 +14,8 @@ const commonLogics = (task, getRoundData) => {
     if (answer === correctAnswer) {
       console.log('Correct!');
     } else {
-      console.log(
-        `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}' \n Let's try again, ${userName}!`
-      );
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
+      console.log(`Let's try again, ${userName}!`);
       return;
     }
   }
